@@ -1,0 +1,47 @@
+.designer-section {
+  padding: 4rem 0;
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.designer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.designer-image-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.designer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--bg-color);
+  box-shadow: 0 0 0 3px var(--primary-cyan), var(--shadow-lg);
+}
+
+.designer-info h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.designer-info .designation {
+  color: var(--primary-cyan);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.designer-info .description {
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto;
+}

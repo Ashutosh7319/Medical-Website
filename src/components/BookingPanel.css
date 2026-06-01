@@ -1,0 +1,136 @@
+.booking-section {
+  position: relative;
+}
+
+.booking-panel {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-cyan);
+  box-shadow: 0 0 0 3px var(--primary-cyan-light);
+}
+
+.payment-mock {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.payment-amount {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-cyan);
+  margin-bottom: 1.5rem;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.payment-method {
+  flex: 1;
+  max-width: 150px;
+  padding: 1.5rem;
+  border: 2px solid var(--border-color);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.payment-method:hover {
+  border-color: var(--primary-cyan);
+  background-color: var(--primary-cyan-light);
+}
+
+.payment-method.active {
+  border-color: var(--primary-cyan);
+  background-color: var(--primary-cyan-light);
+}
+
+.receipt {
+  background-color: var(--bg-color);
+  border: 2px dashed var(--border-color);
+  border-radius: 1rem;
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.receipt-success-icon {
+  color: #10b981;
+  margin-bottom: 1rem;
+}
+
+.token-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--primary-cyan);
+  letter-spacing: 0.25rem;
+  margin: 1.5rem 0;
+  font-family: monospace;
+}
+
+.receipt-details {
+  text-align: left;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px dashed var(--border-color);
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.receipt-row span:first-child {
+  color: var(--text-secondary);
+}
+
+.receipt-row span:last-child {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.loader {
+  border: 4px solid var(--border-color);
+  border-top: 4px solid var(--primary-cyan);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1.5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
